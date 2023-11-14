@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szyfr Vigenere'a - Hojda</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="left-side">
+        <div>
+            <textarea name="before-encryption" id="before-encryption"></textarea>
+        </div>
+
+        <div id="button-box">
+            <button onclick="encrypt()">ZASZYFRUJ</button>
+            <button onclick="decrypt()">ODSZYFRUJ</button>
+        </div>
+
+        <div>
+            <textarea name="after-encryption" id="after-encryption" disabled></textarea>
+        </div>
+    </div>
+    <div id="right-side">
+        <h1>USTAWIENIA</h1>
+        <div class="setting-box">
+
+            <label for="key-setting">Klucz:</label><br>
+            <textarea name="key-setting" id="key-setting" cols="35" rows="1" maxlength="35"></textarea><br>
+
+            <label for="key-preview">Podgląd klucza:</label><br>
+            <textarea name="key-preview" id="key-preview" cols="35" rows="35"></textarea><br>
+
+        </div>
+    </div>
+</body>
+
+</html>
